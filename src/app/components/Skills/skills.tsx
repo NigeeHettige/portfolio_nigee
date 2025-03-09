@@ -50,7 +50,7 @@ export default function Skills() {
             </h2>
             <div className="h-1 bg-header w-20 mx-auto" />
             <p className="mx-auto max-w-xl text-desc mt-4">
-              I've developed a diverse set of skills throughout my education and
+              I&apos;ve developed a diverse set of skills throughout my education and
               projects.
             </p>
           </div>
