@@ -1,5 +1,5 @@
 
-import { Mail, MapPin,  Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { sendContactForm } from "@/lib/api";
 
@@ -92,7 +92,7 @@ export default function Contact() {
                 </div>
                 <div className="flex flex-row">
                   <div className="bg-indigo-100 p-3 rounded-full mr-4">
-                    <Mail className="text-indigo-600" size={20} />
+                    <Phone className="text-indigo-600" size={20} />
                   </div>
                   <div className="flex flex-col">
                     <h4 className="text-gray-600 font-semibold">Phone</h4>
