@@ -1,18 +1,10 @@
-import type { AppProps } from "next/app";
+
 import Image from "next/image";
 import ProfilePicture from "../../../../public/profile_pic.jpg";
 import { ArrowDown, Linkedin, Github } from "lucide-react";
 
 export default function Hero() {
-  const scrolltoabout = () => {
-    const aboutsection = document.getElementById("about");
-    if (aboutsection) {
-      window.scrollTo({
-        top: aboutsection.offsetTop - 70,
-        behavior: "smooth",
-      });
-    }
-  };
+
   return (
     <>
       <section
@@ -25,7 +17,7 @@ export default function Hero() {
           <div className="md:w-1/2 md:pr-10 ">
             <h1 className="md:text-5xl text-4xl lg:text-6xl font-semibold leading-tight mb-4">
               <span className="text-subhead  md:text-2xl block text-xl mb-2">
-                Hello,I'm
+                Hello,I&apos;m
               </span>
               <span className="text-header  ">Nigee Hettige</span>
             </h1>

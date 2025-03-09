@@ -1,4 +1,4 @@
-import type { AppProps } from "next/app";
+
 interface CardProps {
   icon: React.ElementType;
   title: string;

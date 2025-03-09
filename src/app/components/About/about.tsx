@@ -1,4 +1,4 @@
-import type { AppProps } from "next/app";
+
 import { User, BookOpen, Award } from "lucide-react";
 import Card from "./card/card";
 export default function About() {

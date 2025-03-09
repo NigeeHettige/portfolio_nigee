@@ -1,5 +1,5 @@
-import type { AppProps } from "next/app";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+
+import { Mail, MapPin,  Send } from "lucide-react";
 import { useState } from "react";
 import { sendContactForm } from "@/lib/api";
 

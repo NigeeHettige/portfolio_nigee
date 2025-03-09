@@ -2,14 +2,20 @@
 import React, { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import EHR from "../../../../public/images/EHR.png";
-import { useEffect } from "react";
+import Taprobana from "../../../../public/images/taprobana.png"
+import Job from "../../../../public/images/job.png"
+import Volunify from "../../../../public/images/volunify.png"
+import Nighelva from "../../../../public/images/nighelva.jpg"
+import Emotion from "../../../../public/images/emoclassification.png"
+import Movie from "../../../../public/images/movie_recommender.png"
+import Image from "next/image";
 const projects = [
   {
     id: 1,
     title: "EHR System",
     description:
       "A patient management system for the Surgical Oncology Unit, developed as a third-year group software project with roles for Admin, Doctors, and MDT members.",
-    image: "/images/EHR.png",
+    image: EHR,
     tags: ["React", "Node.js", "MySQL", "Express.js"],
     githubUrl: "https://github.com/raveeshavishwajith/TechStrive_Taprobana",
   },
@@ -18,8 +24,8 @@ const projects = [
     title: "Taprobana",
     description:
       "A tourism platform developed for the Rootcode Tech Triathlon competition, selected as a top 10 finalist. Built to enhance tourism experiences in Sri Lanka.",
-    image:
-      "/images/taprobana.png",
+    image:Taprobana
+      ,
     tags: ["Typescript", "Node.js", "MongoDB", "Machine Learning", "Python"],
     githubUrl: "https://github.com/raveeshavishwajith/TechStrive_Taprobana",
   },
@@ -28,8 +34,7 @@ const projects = [
     title: "Madhack 3.0 Job Mobile App",
     description:
       "A mobile application developed for the Madhack 3.0 competition organized by UCSC, selected as one of the final 8 groups.",
-    image:
-      "/images/job.png",
+    image:Job,
     tags: ["Flutter"],
 
     githubUrl: "https://github.com/raveeshavishwajith/madhack_job_app",
@@ -40,7 +45,7 @@ const projects = [
     description:
       "A volunteering management mobile app developed for the Madhack 3.0 final round at Virtusa Auditorium.",
     image:
-      "/images/volunify.png",
+      Volunify,
     tags: ["Flutter"],
 
     githubUrl: "https://github.com/raveeshavishwajith/madhack_3.0",
@@ -51,7 +56,7 @@ const projects = [
     description:
       "An AI-powered content generator built with Next.js, featuring SEO content creation, YouTube tag generation, and more",
     image:
-     "/images/nighelva.jpg",
+    Nighelva,
     tags: [
       "Next.js",
       "PostgreSQL",
@@ -68,7 +73,7 @@ const projects = [
     description:
       "A Python-based text emotion classifier with a React frontend and Flask API, leveraging NLP for sentiment analysis.",
     image:
-      "/images/emoclassification.png",
+     Emotion,
     tags: ["NLP", "Streamlit", "Pandas", "Python", "Pickle"],
 
     githubUrl:
@@ -80,7 +85,7 @@ const projects = [
     description:
       "A movie recommendation system with a Streamlit-based UI for an interactive user experience.",
     image:
-     "/images/movie_recommender.png",
+     Movie,
     tags: ["Python", "Streamlit"],
 
     githubUrl:
@@ -112,7 +117,7 @@ const Projects = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               <div className="relative overflow-hidden h-56">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"

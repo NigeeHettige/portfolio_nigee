@@ -1,11 +1,10 @@
 "use client";
-import { link } from "fs";
-import type { AppProps } from "next/app";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "../../../../public/logo.png";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
+
 
 interface NavbarProps {
   activeSession: string;
@@ -76,7 +75,7 @@ export default function NavBar({ activeSession }: NavbarProps) {
           <Image src={Logo} alt="logo_image" id="home"  />
 
           <nav className="space-x-8 hidden md:flex">
-            {tabs.map((link, index) => (
+            {tabs.map((link) => (
               <a
                 key={link.id}
                 href={`#${link.id}`}
