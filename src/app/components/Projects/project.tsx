@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import {  Github } from "lucide-react";
 import EHR from "../../../../public/images/EHR.png";
 import Taprobana from "../../../../public/images/taprobana.png"
 import Job from "../../../../public/images/job.png"

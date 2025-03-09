@@ -1,4 +1,4 @@
-import type { AppProps } from "next/app";
+
 import { Code, Server, Layout, Database, Terminal, Share2 } from "lucide-react";
 
 export default function Skills() {
